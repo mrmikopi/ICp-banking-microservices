@@ -1,9 +1,9 @@
 /*
  * @author : Alexis Chretienne
  * @email : alexis.chretienne@fr.ibm.com
- * 
+ *
  * Sample code allowing to understand how to code API in Javascript
- * 
+ *
  */
 
 //The API Developer Portal URL
@@ -11,11 +11,11 @@ var url_api_devloper_portal = "https://api.us.apiconnect.ibmcloud.com/spbodieusi
 
 
 // Your API ClientID
-var IBM_CLIENT_ID = "YOUR_CLIENT_ID_HERE";
+var IBM_CLIENT_ID = "c28ce072-cd8a-4e71-86f6-f39395d30cec";
 
 
 // Your API ClientSecret
-var IBM_CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE";
+var IBM_CLIENT_SECRET = "kE7tE5mR5jH8iF6kB6uG5pQ3hO2lW5pI6lB1tT7qW1pS7cH4oI";
 
 
 /*
@@ -35,12 +35,12 @@ $(document).ready(function() {
 
 /*
  * Banking customer information
- * 
+ *
  */
 
 /**
  * Function allowing to get a banking customer's information
- * 
+ *
  * @returns customer Information
  */
 function customerInformation(customerID) {
@@ -54,7 +54,7 @@ function customerInformation(customerID) {
 /**
  * Function allowing to get a banking customer's contracts (cards & banking
  * account)
- * 
+ *
  * @returns a list of banking contracts
  */
 function customerContract() {
@@ -72,7 +72,7 @@ function customerContract() {
 
 /**
  * Function allowing to get a banking account's balance
- * 
+ *
  * @returns a balance
  */
 function balanceInquiry() {
@@ -89,7 +89,7 @@ function balanceInquiry() {
 
 /**
  * Function allowing to get last banking account's transactions
- * 
+ *
  * @returns a list of banking transactions
  */
 function transactionsInquiry() {
@@ -103,7 +103,7 @@ function transactionsInquiry() {
 
 /**
  * Function allowing to get banking account's details
- * 
+ *
  * @returns details
  */
 function accountDetail() {
@@ -122,7 +122,7 @@ function accountDetail() {
 
 /**
  * Function allowing to make a AJAX call using JQuery
- * 
+ *
  * @param path :
  *            customized URL path
  * @param parameter :
@@ -154,7 +154,7 @@ function doGet(path, parameter) {
 			$('#myPleaseWait').modal('hide');
 			console.log("complete function GET");
 		}
-       
+
 	});
 
 }
